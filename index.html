@@ -28,11 +28,11 @@
         const present = new Date();
        let sec = (((present.getSeconds()/60)*360)+90);
        let min = (((present.getMinutes()/60)*360)+90);
-       let hr = (((present.getHours()/24)*360)+90);
+       let hr = (((present.getHours()/12)*360)+90);
        secondHand.style.transform = `rotate(${sec}deg) `;
        minuteHand.style.transform = `rotate(${min}deg) `;
        hourHand.style.transform = `rotate(${hr}deg) `;
-       console.log(present.getMinutes());
+       
      }
 
     </script>
